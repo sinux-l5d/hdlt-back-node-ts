@@ -1,6 +1,13 @@
 import request from 'supertest';
 import app from '@app';
 
+describe('Environment', () => {
+  it('is loaded', () => {
+    expect(process.env.NODE_ENV).toBe('test');
+    expect(process.env.JWT_SECRET).toBeDefined();
+  });
+});
+
 describe('Path /', () => {
   // it is an alias for test
   it('is JSON-encoded', async () => {

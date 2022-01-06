@@ -5,11 +5,13 @@ module.exports = {
   transform: {
     '^.+\\.ts?$': 'ts-jest',
   },
-  testEnvironment: 'node',
   testRegex: './spec/.+\\.ts$',
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: "<rootDir>/" }),
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  moduleFileExtensions: ['ts', 'js', 'json'],
   "roots": [
     "<rootDir>/spec"
+  ],
+  setupFilesAfterEnv: [
+    "<rootDir>/src/loadEnv.ts"
   ]
 };

@@ -18,6 +18,12 @@
     "paths": {
       "@app": [
         "src/app"
+      ],
+      "@type/*": [
+        "src/type/*"
+      ],
+      "@services/*": [
+        "src/services/*"
       ]
     }
   },
