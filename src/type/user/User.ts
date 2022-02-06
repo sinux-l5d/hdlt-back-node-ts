@@ -5,7 +5,7 @@ export type User = {
   /**
    * Id de l'utilisateur
    */
-  id: number;
+  id: string;
   /**
    * Nom d'utilisateur affiché et servant de login.
    *

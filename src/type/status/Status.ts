@@ -2,7 +2,7 @@
  * Forme d'un statuts
  */
 export type Status = {
-  id: number;
+  id: string;
   lawId: number;
   description: string;
   date: Date;

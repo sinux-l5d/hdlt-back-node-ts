@@ -1,5 +1,4 @@
 import express from 'express';
-import * as dotenv from 'dotenv';
 import './loadEnv';
 
 const app = express();
